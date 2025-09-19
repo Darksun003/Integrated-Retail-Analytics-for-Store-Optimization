@@ -19,22 +19,24 @@ Model Persistence: Joblib, JSON for XGBoost Booster
 API Testing: Swagger UI / Postman
 
 📂 Project Structure
-├── app.py                        # FastAPI application (prediction API)
-├── models/                       # Trained model files
+├── app.py                          # FastAPI app for sales forecasting
+├── models/                         # Trained ML models
 │   ├── best_rf_model.pkl
 │   └── best_sales_model.json
-├── utils/
-│   └── preprocessing.py          # Data preprocessing pipeline
-├── data/
+├── utils/                          # Utility scripts
+│   └── preprocessing.py            # Data preprocessing pipeline
+├── data/                           # Raw & processed datasets
 │   ├── sales data-set.csv
 │   ├── stores data-set.csv
 │   ├── Features data set.csv
 │   └── final_merged_dataset.csv
-├── Sample_ML_Submission_Template.ipynb  # Model development & evaluation
-└── README.md
+├── notebooks/                      # Jupyter notebooks for experiments
+│   └── Sample_ML_Submission_Template.ipynb
+├── requirements.txt                # Python dependencies
+├── README.md                       # Project documentation
+└── .gitignore                      # Git ignore file
 
 📊 Datasets Used
-
 Sales Data – Historical weekly sales at store & department level.
 Store Data – Store size, type (A, B, C).
 Features Data – Temperature, Fuel Price, MarkDowns, CPI, Unemployment.
