@@ -19,6 +19,7 @@ Model Persistence: Joblib, JSON for XGBoost Booster
 API Testing: Swagger UI / Postman
 
 📂 Project Structure
+<pre>'''
 ├── app.py                          # FastAPI app for sales forecasting
 ├── models/                         # Trained ML models
 │   ├── best_rf_model.pkl
@@ -35,7 +36,8 @@ API Testing: Swagger UI / Postman
 ├── requirements.txt                # Python dependencies
 ├── README.md                       # Project documentation
 └── .gitignore                      # Git ignore file
-
+'''</pre>
+  
 📊 Datasets Used
 Sales Data – Historical weekly sales at store & department level.
 Store Data – Store size, type (A, B, C).
